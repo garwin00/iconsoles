@@ -1,0 +1,320 @@
+/* line 1, ../sass/partials/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  font-size: 1em;
+}
+
+@font-face {
+  src: url("./fonts/pixelemulator.otf");
+  font-family: "pixelemulator";
+}
+/* line 6, ../sass/partials/_type.scss */
+h1 {
+  font-family: "pixelemulator", sans-serif;
+  text-align: center;
+  font-size: 4.618rem;
+  letter-spacing: 5px;
+  margin: 3rem 0;
+  color: #E57373;
+}
+
+/* line 15, ../sass/partials/_type.scss */
+h2 {
+  font-family: "pixelemulator", sans-serif;
+  font-size: 3.618rem;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+/* line 22, ../sass/partials/_type.scss */
+h3 {
+  font-family: "pixelemulator", sans-serif;
+  font-size: 1.618rem;
+  color: #424242;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+/* line 30, ../sass/partials/_type.scss */
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6rem;
+}
+
+/* line 6, ../sass/style.scss */
+body {
+  background-color: #e0e0e0;
+}
+
+/* line 10, ../sass/style.scss */
+.one,
+.two,
+.three {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 2.5rem auto;
+  border-radius: 12.5px;
+}
+
+/* line 20, ../sass/style.scss */
+.landing {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 23, ../sass/style.scss */
+.landing p {
+  color: #424242;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* line 30, ../sass/style.scss */
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 200px;
+  text-align: center;
+  color: #E57373;
+  margin: 0 auto;
+  font-family: "pixelemulator", sans-serif;
+  animation: pulse 2s infinite;
+}
+
+/* line 44, ../sass/style.scss */
+.downarrow {
+  background-color: transparent;
+  border: none;
+  font-size: 6rem;
+  width: 100%;
+  color: #E57373;
+}
+
+@keyframes pulse {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* line 58, ../sass/style.scss */
+.one {
+  background-color: #E57373;
+}
+
+/* line 62, ../sass/style.scss */
+.two {
+  background-color: #64B5F6;
+}
+
+/* line 66, ../sass/style.scss */
+.three {
+  background-color: #81C784;
+}
+
+/* line 70, ../sass/style.scss */
+.container {
+  max-width: 55%;
+  margin: 5rem auto;
+}
+
+/* line 75, ../sass/style.scss */
+.grid_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-top: 5rem;
+}
+/* line 80, ../sass/style.scss */
+.grid_two img {
+  width: 50%;
+  height: auto;
+}
+/* line 84, ../sass/style.scss */
+.grid_two .title {
+  font-family: "pixelemulator", sans-serif;
+  text-transform: uppercase;
+}
+/* line 88, ../sass/style.scss */
+.grid_two .title_bar {
+  height: 3rem;
+  width: calc(100% - 1rem);
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  border-radius: 12.5px 12.5px 0 0;
+  -webkit-box-shadow: 0px 0px 3px 0px #757575;
+  -moz-box-shadow: 0px 0px 3px 0px #757575;
+  box-shadow: 0px 0px 3px 0px #757575;
+}
+/* line 100, ../sass/style.scss */
+.grid_two .grid_item {
+  background-color: #e0e0e0;
+  border-radius: 12.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 3px 0px #757575;
+  -moz-box-shadow: 0px 0px 3px 0px #757575;
+  box-shadow: 0px 0px 3px 0px #757575;
+}
+/* line 108, ../sass/style.scss */
+.grid_two img:hover {
+  transform: scale(1.25);
+}
+
+/* line 113, ../sass/style.scss */
+.grid_four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+/* line 119, ../sass/style.scss */
+.nintendo {
+  color: #E57373;
+}
+
+/* line 123, ../sass/style.scss */
+.sony {
+  color: #64B5F6;
+}
+
+/* line 127, ../sass/style.scss */
+.xbox {
+  color: #81C784;
+}
+
+/* line 131, ../sass/style.scss */
+hr {
+  width: 200px;
+  border: 1.5px solid #e0e0e0;
+  margin: 3rem auto;
+}
+
+/* line 137, ../sass/style.scss */
+.button {
+  height: 3rem;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #424242;
+  font-family: "pixelemulator", sans-serif;
+  color: #e0e0e0;
+  cursor: pointer;
+  border-radius: 12.5px;
+}
+
+/* line 148, ../sass/style.scss */
+.button:hover {
+  background-color: #424242;
+  color: #e0e0e0;
+  transition: .3s all;
+  -webkit-box-shadow: 0px 0px 3px 0px #757575;
+  -moz-box-shadow: 0px 0px 3px 0px #757575;
+  box-shadow: 0px 0px 3px 0px #757575;
+}
+
+/* line 157, ../sass/style.scss */
+.download_section {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 160, ../sass/style.scss */
+.download_section p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* line 164, ../sass/style.scss */
+.download_section a {
+  text-decoration: none;
+}
+
+/* line 169, ../sass/style.scss */
+footer {
+  height: 30vh;
+  width: 100%;
+  background-color: #424242;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .875rem;
+}
+/* line 175, ../sass/style.scss */
+footer a {
+  font-family: "Montserrat", sans-serif;
+  color: #E57373;
+  text-decoration: none;
+}
+/* line 180, ../sass/style.scss */
+footer a:hover {
+  opacity: .6;
+}
+/* line 183, ../sass/style.scss */
+footer .small {
+  margin: 1rem auto;
+  width: 100px;
+  border: 1px solid #E57373;
+}
+
+/* line 190, ../sass/style.scss */
+.dark {
+  color: #424242;
+}
+
+@media (max-width: 50em) {
+  /* line 195, ../sass/style.scss */
+  h1 {
+    font-size: 2.618rem;
+  }
+
+  /* line 198, ../sass/style.scss */
+  h2 {
+    font-size: 2.618rem;
+  }
+
+  /* line 201, ../sass/style.scss */
+  .container {
+    max-width: 95%;
+  }
+
+  /* line 204, ../sass/style.scss */
+  .landing .container {
+    font-size: .875rem;
+    max-width: 90%;
+  }
+
+  /* line 208, ../sass/style.scss */
+  .grid_two,
+  .grid_four {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 35em) {
+  /* line 215, ../sass/style.scss */
+  .section {
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin fullpage {
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  
+  @mixin imagesize {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

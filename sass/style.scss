@@ -1,0 +1,220 @@
+@import 'compass';
+@import 'partials/reset';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/type';
+body {
+  background-color: $grey;
+}
+
+.one,
+.two,
+.three {
+  height: auto;
+  @include centered;
+  width: 90%;
+  margin: 2.5rem auto;
+  border-radius: 12.5px;
+}
+
+.landing {
+  @include fullpage;
+  @include centered;
+  p {
+    color: $drkgrey;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 200px;
+  text-align: center;
+  color: $nintendo;
+  margin: 0 auto;
+  font-family: $header;
+  animation: pulse 2s infinite;
+}
+
+.downarrow {
+  background-color: transparent;
+  border: none;
+  font-size: 6rem;
+  width: 100%;
+  color: $nintendo;
+}
+
+@keyframes pulse {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.one {
+  background-color: $nintendo;
+}
+
+.two {
+  background-color: $sony;
+}
+
+.three {
+  background-color: $xbox;
+}
+
+.container {
+  max-width: 55%;
+  margin: 5rem auto;
+}
+
+.grid_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-top: 5rem;
+  img {
+    width: 50%;
+    height: auto;
+  }
+  .title {
+    font-family: $header;
+    text-transform: uppercase;
+  }
+  .title_bar {
+    height: 3rem;
+    width: calc(100% - 1rem);
+    background-color: $lightgrey;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 12.5px 12.5px 0 0;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+    box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+  }
+  .grid_item {
+    background-color: $grey;
+    border-radius: 12.5px;
+    @include centered;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+    box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+  }
+  img:hover {
+    transform: scale(1.25);
+  }
+}
+
+.grid_four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.nintendo {
+  color: $nintendo;
+}
+
+.sony {
+  color: $sony;
+}
+
+.xbox {
+  color: $xbox;
+}
+
+hr {
+  width: 200px;
+  border: 1.5px solid $grey;
+  margin: 3rem auto;
+}
+
+.button {
+  height: 3rem;
+  width: 200px;
+  @include centered;
+  border: 3px solid $drkgrey;
+  font-family: $header;
+  color: $grey;
+  cursor: pointer;
+  border-radius: 12.5px;
+}
+
+.button:hover {
+  background-color: $drkgrey;
+  color: $grey;
+  transition: .3s all;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+  box-shadow: 0px 0px 3px 0px rgba(117, 117, 117, 1);
+}
+
+.download_section {
+  @include fullpage;
+  @include centered;
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+  background-color: $drkgrey;
+  @include centered;
+  font-size: .875rem;
+  a {
+    font-family: $body;
+    color: $nintendo;
+    text-decoration: none;
+  }
+  a:hover {
+    opacity: .6;
+  }
+  .small {
+    margin: 1rem auto;
+    width: 100px;
+    border: 1px solid $nintendo;
+  }
+}
+
+.dark {
+  color: $drkgrey;
+}
+
+@media (max-width: 50em) {
+  h1 {
+    font-size: 2.618rem;
+  }
+  h2 {
+    font-size: 2.618rem;
+  }
+  .container {
+    max-width: 95%;
+  }
+  .landing .container {
+    font-size: .875rem;
+    max-width: 90%;
+  }
+  .grid_two,
+  .grid_four {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 35em) {
+  .section {
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+  }
+}

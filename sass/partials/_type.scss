@@ -1,0 +1,35 @@
+@font-face {
+  src: url("./fonts/pixelemulator.otf");
+  font-family: "pixelemulator";
+}
+
+h1 {
+  font-family: $header;
+  text-align: center;
+  font-size: 4.618rem;
+  letter-spacing: 5px;
+  margin: 3rem 0;
+  color: $nintendo;
+}
+
+h2 {
+  font-family: $header;
+  font-size: 3.618rem;
+  color: $grey;
+  text-align: center;
+}
+
+h3 {
+  font-family: $header;
+  font-size: 1.618rem;
+  color: $drkgrey;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+p {
+  font-family: $body;
+  color: $grey;
+  line-height: 1.6rem;
+}
+
